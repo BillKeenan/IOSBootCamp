@@ -1,0 +1,282 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1DBD460714D40171007CDEBE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DBD460614D40171007CDEBE /* UIKit.framework */; };
+		1DBD460914D40171007CDEBE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DBD460814D40171007CDEBE /* Foundation.framework */; };
+		1DBD460B14D40171007CDEBE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DBD460A14D40171007CDEBE /* CoreGraphics.framework */; };
+		1DBD461114D40171007CDEBE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1DBD460F14D40171007CDEBE /* InfoPlist.strings */; };
+		1DBD461314D40171007CDEBE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DBD461214D40171007CDEBE /* main.m */; };
+		1DBD461714D40171007CDEBE /* EMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DBD461614D40171007CDEBE /* EMAppDelegate.m */; };
+		1DBD461A14D40171007CDEBE /* EMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DBD461914D40171007CDEBE /* EMViewController.m */; };
+		1DBD461D14D40171007CDEBE /* EMViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DBD461B14D40171007CDEBE /* EMViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1DBD460214D40171007CDEBE /* RotateViewControllerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RotateViewControllerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DBD460614D40171007CDEBE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1DBD460814D40171007CDEBE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1DBD460A14D40171007CDEBE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1DBD460E14D40171007CDEBE /* RotateViewControllerExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RotateViewControllerExample-Info.plist"; sourceTree = "<group>"; };
+		1DBD461014D40171007CDEBE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1DBD461214D40171007CDEBE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1DBD461414D40171007CDEBE /* RotateViewControllerExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RotateViewControllerExample-Prefix.pch"; sourceTree = "<group>"; };
+		1DBD461514D40171007CDEBE /* EMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EMAppDelegate.h; sourceTree = "<group>"; };
+		1DBD461614D40171007CDEBE /* EMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EMAppDelegate.m; sourceTree = "<group>"; };
+		1DBD461814D40171007CDEBE /* EMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EMViewController.h; sourceTree = "<group>"; };
+		1DBD461914D40171007CDEBE /* EMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EMViewController.m; sourceTree = "<group>"; };
+		1DBD461C14D40171007CDEBE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/EMViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1DBD45FF14D40171007CDEBE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DBD460714D40171007CDEBE /* UIKit.framework in Frameworks */,
+				1DBD460914D40171007CDEBE /* Foundation.framework in Frameworks */,
+				1DBD460B14D40171007CDEBE /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1DBD45F714D40171007CDEBE = {
+			isa = PBXGroup;
+			children = (
+				1DBD460C14D40171007CDEBE /* RotateViewControllerExample */,
+				1DBD460514D40171007CDEBE /* Frameworks */,
+				1DBD460314D40171007CDEBE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1DBD460314D40171007CDEBE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1DBD460214D40171007CDEBE /* RotateViewControllerExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1DBD460514D40171007CDEBE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DBD460614D40171007CDEBE /* UIKit.framework */,
+				1DBD460814D40171007CDEBE /* Foundation.framework */,
+				1DBD460A14D40171007CDEBE /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1DBD460C14D40171007CDEBE /* RotateViewControllerExample */ = {
+			isa = PBXGroup;
+			children = (
+				1DBD461514D40171007CDEBE /* EMAppDelegate.h */,
+				1DBD461614D40171007CDEBE /* EMAppDelegate.m */,
+				1DBD461814D40171007CDEBE /* EMViewController.h */,
+				1DBD461914D40171007CDEBE /* EMViewController.m */,
+				1DBD461B14D40171007CDEBE /* EMViewController.xib */,
+				1DBD460D14D40171007CDEBE /* Supporting Files */,
+			);
+			path = RotateViewControllerExample;
+			sourceTree = "<group>";
+		};
+		1DBD460D14D40171007CDEBE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1DBD460E14D40171007CDEBE /* RotateViewControllerExample-Info.plist */,
+				1DBD460F14D40171007CDEBE /* InfoPlist.strings */,
+				1DBD461214D40171007CDEBE /* main.m */,
+				1DBD461414D40171007CDEBE /* RotateViewControllerExample-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1DBD460114D40171007CDEBE /* RotateViewControllerExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DBD462014D40171007CDEBE /* Build configuration list for PBXNativeTarget "RotateViewControllerExample" */;
+			buildPhases = (
+				1DBD45FE14D40171007CDEBE /* Sources */,
+				1DBD45FF14D40171007CDEBE /* Frameworks */,
+				1DBD460014D40171007CDEBE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RotateViewControllerExample;
+			productName = RotateViewControllerExample;
+			productReference = 1DBD460214D40171007CDEBE /* RotateViewControllerExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1DBD45F914D40171007CDEBE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 1DBD45FC14D40171007CDEBE /* Build configuration list for PBXProject "RotateViewControllerExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1DBD45F714D40171007CDEBE;
+			productRefGroup = 1DBD460314D40171007CDEBE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1DBD460114D40171007CDEBE /* RotateViewControllerExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1DBD460014D40171007CDEBE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DBD461114D40171007CDEBE /* InfoPlist.strings in Resources */,
+				1DBD461D14D40171007CDEBE /* EMViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1DBD45FE14D40171007CDEBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DBD461314D40171007CDEBE /* main.m in Sources */,
+				1DBD461714D40171007CDEBE /* EMAppDelegate.m in Sources */,
+				1DBD461A14D40171007CDEBE /* EMViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1DBD460F14D40171007CDEBE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1DBD461014D40171007CDEBE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1DBD461B14D40171007CDEBE /* EMViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1DBD461C14D40171007CDEBE /* en */,
+			);
+			name = EMViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1DBD461E14D40171007CDEBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1DBD461F14D40171007CDEBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1DBD462114D40171007CDEBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RotateViewControllerExample/RotateViewControllerExample-Prefix.pch";
+				INFOPLIST_FILE = "RotateViewControllerExample/RotateViewControllerExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1DBD462214D40171007CDEBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RotateViewControllerExample/RotateViewControllerExample-Prefix.pch";
+				INFOPLIST_FILE = "RotateViewControllerExample/RotateViewControllerExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DBD45FC14D40171007CDEBE /* Build configuration list for PBXProject "RotateViewControllerExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DBD461E14D40171007CDEBE /* Debug */,
+				1DBD461F14D40171007CDEBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DBD462014D40171007CDEBE /* Build configuration list for PBXNativeTarget "RotateViewControllerExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DBD462114D40171007CDEBE /* Debug */,
+				1DBD462214D40171007CDEBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1DBD45F914D40171007CDEBE /* Project object */;
+}
