@@ -55,7 +55,7 @@
         myProgressView.tag = 100;
         [self.view addSubview:myProgressView];
         
-        BOOL easy = TRUE;
+        BOOL easy = false;
         BOOL small = TRUE;
         
         //    NSLog(@"Should be getting image.");

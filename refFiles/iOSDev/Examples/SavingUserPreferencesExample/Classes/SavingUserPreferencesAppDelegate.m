@@ -14,7 +14,15 @@
 @synthesize redButton = _redButton, blueButton = _blueButton;
 @synthesize prefs = _prefs;
 
+
 - (void)applicationDidFinishLaunching:(UIApplication *)application {
+    
+    self.mySwitch = [[UISwitch alloc] initWithFrame:CGRectMake(50., 50., 0., 0.)];
+                     
+    [self.mySwitch addTarget:self action:@selector(switchSwitched:) forControlEvents:UIControlEventValueChanged];
+    
+    [self.window addSubview:self.mySwitch];
+    
 	self.prefs = [NSUserDefaults standardUserDefaults];
 	// Check to see what was stored in the user prefs, and update the label with that colour.
 	if ([self.prefs stringForKey:@"selectedColour"] == nil) {
@@ -22,6 +30,7 @@
     } else {
 		NSLog(@"The prefs is set.");
 		self.selectedColourLabel.text = [self.prefs stringForKey:@"selectedColour"];
+        self.mySwitch.on = [self.prefs boolForKey:@"myKey"];
 	}
 	
     // Override point for customization after application launch
@@ -51,4 +60,14 @@
 	self.selectedColourLabel.text = @"Not Selected";
 }
 
+- (IBAction)switchChanged:(id)sender {
+}
+
+- (IBAction)switchSwitched:(UISwitch*)sender {
+    //NSLog(@"%@",sender);
+    UISwitch *here = (UISwitch *)sender;
+    NSLog(@"test %d",here.on);
+    [self.prefs setBool:here.on  forKey:@"myKey"];
+    [self.prefs synchronize];
+}
 @end

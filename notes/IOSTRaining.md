@@ -12,6 +12,7 @@
 # References
 * [Cocoawithlove.com](Cocoawithlove.com)
 * [learn coco](learn-cocos2d.com)
+* [Ray](http://www.raywenderlich.com/)
 
 # Projects
 
@@ -21,3 +22,4 @@
 
 * NAvigation controls get viewccontrollers added, never subclassed
 
+* NSuSerDefaults is equivalent of cookies

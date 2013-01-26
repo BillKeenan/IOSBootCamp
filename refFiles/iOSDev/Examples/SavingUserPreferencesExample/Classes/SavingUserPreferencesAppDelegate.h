@@ -13,8 +13,13 @@
 	UILabel *_selectedColourLabel;
 	UIButton *_redButton;
 	UIButton *_blueButton;
+    	UISwitch *_mySwitch;
 	NSUserDefaults *_prefs;
+
 }
+- (IBAction)switchSwitched:(UISwitch*)sender;
+
+@property (nonatomic, strong) IBOutlet UISwitch *mySwitch;
 
 @property (nonatomic, strong) IBOutlet UIWindow *window;
 @property (nonatomic, strong) IBOutlet UILabel *selectedColourLabel;
