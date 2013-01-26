@@ -55,12 +55,12 @@
         myProgressView.tag = 100;
         [self.view addSubview:myProgressView];
         
-        BOOL easy = FALSE;
-        BOOL small = FALSE;
+        BOOL easy = TRUE;
+        BOOL small = TRUE;
         
         //    NSLog(@"Should be getting image.");
-        NSString *path = (small) ? @"http://jamess-macbook-air.local/~jameseberhardt/natasha.jpg" :
-        @"http://jamess-macbook-air.local/~jameseberhardt/really_big_image.jpg";
+        NSString *path = (small) ? @"http://www.a-gc.com/images/2012/09/animals-monkeys-HD-Wallpapers.jpg" :
+        @"http://eberhardt.ca/queen_natasha.png";
         NSURL *url = [NSURL URLWithString:path];
         
         if (easy){

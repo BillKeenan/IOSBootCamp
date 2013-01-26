@@ -15,17 +15,17 @@
 	CGRect screenRect = [[UIScreen mainScreen] applicationFrame];
 	UIView *contentView = [[UIView alloc] initWithFrame:screenRect];
 
-	testTextField = [[UITextField alloc] initWithFrame:CGRectMake(50, 350, 190, 30)];
+	testTextField = [[UITextField alloc] initWithFrame:CGRectMake(50, 100, 190, 30)];
 	testTextField.borderStyle = UITextBorderStyleRoundedRect;
 	testTextField.keyboardType = UIKeyboardTypeNumbersAndPunctuation;
 	testTextField.returnKeyType = UIReturnKeyNext;
 	testTextField.placeholder = @"<enter text>";
 	testTextField.delegate = self;
-	
+
 	UIButton *doneButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
 	[doneButton addTarget:self action:@selector(hideKeyboard:) forControlEvents:UIControlEventTouchUpInside];
 	[doneButton setTitle:@"Done" forState:0];
-	doneButton.frame = CGRectMake(250, 50, 50, 30);
+	doneButton.frame = CGRectMake(10, 50, 50, 30);
 	
 	[contentView addSubview:doneButton];
 	[contentView addSubview:testTextField];
@@ -38,6 +38,12 @@
     [contentView setBackgroundColor:[UIColor greenColor]];
 }
 
+-(void)viewDidAppear:(BOOL)animated{
+    testTextField.keyboardType=UIKeyboardTypeEmailAddress;
+
+    [testTextField becomeFirstResponder];
+
+}
 - (void)didReceiveMemoryWarning {
 	// Releases the view if it doesn't have a superview.
     [super didReceiveMemoryWarning];
@@ -68,9 +74,12 @@
 	return FALSE;
 }
 
-
-- (void)dealloc {
-    [super dealloc];
+- (BOOL) textField: (UITextField *)theTextField shouldChangeCharactersInRange: (NSRange)range replacementString: (NSString *)string {
+    if (testTextField == testTextField){
+        [testTextField setText:[testTextField text]];
+//            NSLog(@"typing %@",testTextField.text);
+    }
 }
+
 
 @end
