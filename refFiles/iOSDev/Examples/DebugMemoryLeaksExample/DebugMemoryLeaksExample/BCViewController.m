@@ -17,9 +17,9 @@
 - (IBAction)buttonClick:(id)sender {
     NSLog(@"Creating a UIView object");
 	UIView *newView = [UIView alloc];
-//    [newView release];
+//   [newView release];
     
-    //newView.backgroundColor = [UIColor redColor];
+//    newView.backgroundColor = [UIColor redColor];
     //[newView release];
 }
 

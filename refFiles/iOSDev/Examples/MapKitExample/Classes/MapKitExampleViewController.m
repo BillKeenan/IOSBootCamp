@@ -38,9 +38,22 @@
 	pinLocation.longitude = -79.389181;
 	[self addPin:pinLocation];
 	
-	MKCoordinateRegion region;
-	region.center=pinLocation;
-	
+    
+	CLLocationCoordinate2D pinLocation2;
+	pinLocation2.latitude = 43.649553;
+	pinLocation2.longitude = -77.389181;
+	[self addPin:pinLocation2];
+    
+    
+    
+   
+	CLLocationCoordinate2D center;
+	center.latitude = pinLocation.latitude-(( pinLocation.latitude-pinLocation2.latitude)/2);
+	center.longitude = pinLocation.longitude-((pinLocation.longitude-pinLocation2.longitude)/2);
+
+    MKCoordinateRegion region;
+	region.center=center;
+    
 	//Set Zoom level using Span
 	MKCoordinateSpan span;
 	span.latitudeDelta=2.0;
