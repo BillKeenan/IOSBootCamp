@@ -15,6 +15,6 @@
 }
 
 @property (nonatomic, strong) Shape *ball;
-@property (nonatomic, strong) NSMutableArray *touches;
+
 
 @end

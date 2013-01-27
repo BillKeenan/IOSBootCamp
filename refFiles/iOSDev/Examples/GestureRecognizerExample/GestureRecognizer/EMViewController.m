@@ -36,7 +36,11 @@
     // A pinch gesture
     UIPinchGestureRecognizer *pinchGesture = [[UIPinchGestureRecognizer alloc] initWithTarget:self action:@selector(handlePinchGesture:)];
     [self.view addGestureRecognizer:pinchGesture];
-        
+    
+    //A rotation gestre
+    UIRotationGestureRecognizer *rotateGesture = [[UIRotationGestureRecognizer alloc] initWithTarget:self action:@selector(handleRotation:)];
+    [self.view addGestureRecognizer:rotateGesture];
+    
     // Long press gesture
     UILongPressGestureRecognizer *longpressGesture = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(handleLongPressGesture:)];
     longpressGesture.minimumPressDuration = 3;
@@ -60,6 +64,10 @@
     NSLog(@"Long press: %f", gestureRecognizer.minimumPressDuration);
 }
 
+-(void)handleRotation:(UIRotationGestureRecognizer *)rotationRecognizer{
+    NSLog(@"Rotate %f",rotationRecognizer.rotation);
+        NSLog(@"Rotate %f",rotationRecognizer.velocity);
+}
 - (void)viewDidUnload
 {
     for (UIGestureRecognizer *gestureRecognizer in self.view.gestureRecognizers){

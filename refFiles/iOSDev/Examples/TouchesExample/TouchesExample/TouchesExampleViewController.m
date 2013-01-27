@@ -10,7 +10,7 @@
 
 @implementation TouchesExampleViewController
 
-@synthesize ball = _ball, touches = _touches;
+@synthesize ball = _ball;
 
 #pragma mark - View lifecycle
 
@@ -24,7 +24,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.touches = [[NSMutableArray alloc] init];
+
 }
 
 - (void) touchesBegan:(NSSet*)touches withEvent:(UIEvent*)event

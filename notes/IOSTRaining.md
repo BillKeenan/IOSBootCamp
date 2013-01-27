@@ -23,3 +23,5 @@
 * NAvigation controls get viewccontrollers added, never subclassed
 
 * NSuSerDefaults is equivalent of cookies
+
+* Quartz Core has libraries for button layers.
